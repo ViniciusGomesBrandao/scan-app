@@ -1,0 +1,28 @@
+<nb-layout windowMode>
+    <nb-layout-header fixed>
+        <div class="row justify-content-start">
+            <div class="col-auto">
+                <button nbButton status="control" (click)="toggle()">
+                    <nb-icon icon="cube-outline" ></nb-icon>
+                </button>
+            </div>
+        </div>
+        
+    </nb-layout-header>
+
+    
+
+    <nb-sidebar responsive>
+        <div class="row">
+            <div class="col-12">
+                <nb-menu [items]="menuItems" ></nb-menu>
+            </div>            
+        </div>
+    </nb-sidebar>
+
+    <nb-layout-column class="colored-column-basic">
+        <div class="content h-100">
+            <router-outlet></router-outlet>
+        </div>
+    </nb-layout-column>
+</nb-layout>
