@@ -26,6 +26,9 @@ export class PagesComponent implements OnInit {
     }
   ]
   constructor(
+
+
+    
     private censysService: CensysService,
     private shodanService: ShodanService,
     private sidebarService: NbSidebarService
