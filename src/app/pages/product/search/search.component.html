@@ -1,5 +1,19 @@
 <div class="row justify-content-center">
-    <div class="col-4">
-        <input type="text" nbInput fullWidth shape="semi-round">
+    <div class="col-12 col-sm-8 col-md-5 col-xl-6 mt-3">
+        <input type="text" placeholder="Digite o filtro que deseja buscar..." nbInput fullWidth shape="semi-round">
+    </div>
+    <div class="col-12 col-sm-4 col-md-4 col-xl-3 mt-3">
+        <nb-select shape="semi-round" placeholder="Por..." fullWidth>
+            <nb-option value="location.city">
+                Cidade
+            </nb-option>
+          </nb-select>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 col-xl-3 mt-3">
+        <button class="primary-custom" shape="semi-round" nbButton fullWidth>
+            <nb-icon icon="search-outline">
+            </nb-icon>
+            Buscar
+        </button>
     </div>
 </div>

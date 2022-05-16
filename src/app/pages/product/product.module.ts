@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
 import { SearchComponent } from './search/search.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NbInputModule } from '@nebular/theme';
+import { NbInputModule, NbSelectModule, NbButtonModule, NbIconModule } from '@nebular/theme';
 
 
 const routes: Routes = [
@@ -31,6 +31,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     NbInputModule,
+    NbButtonModule,
+    NbIconModule,
+    NbSelectModule,
     RouterModule.forChild(routes)
   ]
 })

@@ -12,3 +12,39 @@
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+
+
+$primary-black: #212121;
+$second-black: #272c36;
+$third-black: #373533;
+
+$primary-green: #50a543;
+$secondary-green:#3b9b23;
+$third-green: #1f6d0c;
+$fourth-green: #8cd790;
+
+
+$primary-blue: #203a67;
+
+.primary-custom{
+  color: white !important;
+  border-color: $primary-green !important;
+  background-color: $primary-green !important;
+}
+
+.nb-theme-default nb-menu .menu-item a.active .menu-icon {
+  color: $third-green !important;
+}
+
+.nb-theme-default nb-menu .menu-item a.active {
+  background-color: transparent;
+  color: $third-green;
+}
+.nb-theme-default nb-menu .menu-item>.menu-items>.menu-item a.active {
+  color: $third-green;
+  border-color: $third-green;
+}
+.nb-theme-default nb-sidebar.compacted nb-menu .menu-item a.active::before {
+  background: $third-green;
+}
